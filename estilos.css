@@ -1,0 +1,94 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+article {
+    width: 600px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+article h1 {
+    font-size: 2.8em;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article span {
+    padding-right: 0.6em;
+    color: #999999;
+
+}
+
+article p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
+    color: #444444;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+article .btn-read {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    ;
+    border: 0px solid;
+    background-color: red;
+    width: 130px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+article .btn-read:hover {
+    background-color: white;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+
+}
+
+article .btn-later {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    ;
+    border: 1px solid red;
+    background-color: white;
+    width: 130px;
+    height: 50px;
+    color: red;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+article .btn-later:hover {
+    background-color: red;
+    border: 1px solid white;
+    background-color: red;
+    color: white;
+
+}
+
+.Box-Shadow {
+    -webkit-box-shadow: 3px -4px 29px 9px rgba(227,224,227,1);
+    -moz-box-shadow: 3px -4px 29px 9px rgba(227,224,227,1);
+    box-shadow: 3px -4px 29px 9px rgba(227,224,227,1);
+    padding: 25px;
+}
+.Box-Shadow-Hover{
+    border: 1px solid rgb(230, 230, 230);
+    background-color: white;
+    padding: 25px;
+}
+.Box-Shadow-Hover:hover {
+    -webkit-box-shadow: 3px -3px 20px 0px rgba(227,224,227,1);
+    -moz-box-shadow: 3px -3px 20px 0px rgba(227,224,227,1);
+    box-shadow: 3px -3px 20px 0px rgba(227,224,227,1);
+    padding: 25px;
+   
+}
