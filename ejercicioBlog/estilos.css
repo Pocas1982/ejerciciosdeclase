@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap');
+
+body{
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    display: flex;
+}
+.content{
+    margin: 0;
+}
+
+.section-left{
+    
+    width: 20%;
+   height: auto;
+    background-color: #607D8B;
+    padding: 130px 32px;
+    color: #ffffff;
+   
+    text-align: right;
+}
+.section-left .title{
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 50px; 
+}
+.section-left .text-box{
+    font-size: 28px;
+}
+.section-left .btn-blog{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.section-left .btn-blog:hover{
+    
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+.section-right{
+    display: inline-block;
+    width: 70%;
+    margin-left: 2%;
+}
+.section-right .subtitle{
+    color: #d2d1d1;
+}
+hr{
+    border: 0.3px solid #eaeaea;
+}
+.section-right .article-one .title, .section-right .article-two .title{
+    color: #737171;
+}
+.section-right .article-one .box-color-css {
+    background-color: #87d43b;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+.section-right .article-one .box-color-pure {
+    background-color: #3b7fd4;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+.section-right .article-two .box-color-javascript {
+    background-color: #ec0041;
+    padding: 0px 10px;
+    color: #ffffff;
+}
+.section-right .article-one, .section-right .article-two{
+    padding-bottom: 30px;
+}
+.section-right .title-article{
+    display: inline-block;
+}
+.section-right .article-one img, .section-right .article-two img{
+    width: 5%;
+    float:right;
+    margin-top: 25px;
+    border-radius: 100px;
+}
+.section-right .article-one .text-content a, .section-right .article-two .text-content a {
+    text-decoration: none;
+}
