@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.line {
+  border-bottom: 1px solid #ffffff;
+  width: 60px;
+}
+
+.hero-box {
+  background-image: url(https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #999;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 700px;
+  padding: 0 60px 50px;
+}
+@media only screen and (max-width: 375px) {
+  .hero-box {
+    padding: 0 40px 50px;
+  }
+}
+.hero-box .image-bg {
+  display: flex;
+  padding: 30px 0;
+  justify-content: flex-end;
+}
+.hero-box .image-bg .logo {
+  display: flex;
+  font-size: 95px;
+  left: 25px;
+  position: absolute;
+  top: 0px;
+}
+.hero-box .image-bg .nav-bar {
+  display: flex;
+}
+.hero-box .image-bg .nav-bar .link {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+@media only screen and (max-width: 414px) {
+  .hero-box .image-bg .nav-bar {
+    display: none;
+  }
+}
+.hero-box .image-bg .nav-bar .link-btn {
+  border: 1px solid #ffffff;
+}
+.hero-box .image-bg .nav-bar .link-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.hero-box .text-box {
+  margin: 70px 0;
+}
+@media only screen and (max-width: 414px) {
+  .hero-box .text-box {
+    margin: 120px 0 70px 0;
+  }
+}
+.hero-box .text-box .title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.hero-box .text-box p.subtitle {
+  font-size: 25px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+@media only screen and (max-width: 375px) {
+  .hero-box .text-box p.subtitle {
+    font-size: 17px;
+  }
+}
+.hero-box .subtext-box {
+  text-align: center;
+  color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.hero-box .subtext-box .title {
+  font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .hero-box .subtext-box .title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .hero-box .subtext-box .title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero-box .subtext-box .title {
+    font-size: 30px;
+  }
+}
+.hero-box .subtext-box .subtitle {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.hero-box .subtext-box .text {
+  font-family: "Baloo Bhaina 2", cursive;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.hero-box .subtext-box .line {
+  margin: 0 auto;
+}
+
+.article-box {
+  padding: 60px 50px;
+  background-color: #252525;
+}
+@media only screen and (max-width: 375px) {
+  .article-box {
+    padding: 60px 30px;
+  }
+}
+.article-box .info-box {
+  text-align: center;
+  color: #ffffff;
+}
+.article-box .info-box .title {
+  font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .article-box .info-box .title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .article-box .info-box .title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .article-box .info-box .title {
+    font-size: 30px;
+  }
+}
+.article-box .info-box .subtitle {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.article-box .info-box .line {
+  margin: 0 auto;
+}
+.article-box .article-content {
+  display: flex;
+  margin: 0 -20px;
+}
+.article-box .article-content .article {
+  height: 600px;
+  width: calc(33% - 20px);
+  background-color: aqua;
+  margin: 45px 20px;
+  box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  .article-box .article-content .article {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .article-box .article-content .article {
+    height: 350px;
+    width: calc(33% - 0px);
+    margin: 45px 5px;
+  }
+}
+.article-box .article-content .article:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1530542600451-eaa8984ba8d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);
+}
+.article-box .article-content .article:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1580743069148-65e1e12c171d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+}
+.article-box .article-content .article:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1582696943041-a519d0d4c464?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+}
+.article-box .article-content .title.bottom {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  left: 25%;
+  right: 25%;
+  color: #ffffff;
+}
+.article-box .article-content .title.bottom .line {
+  margin: 10px auto;
+}
+
+.subscribe {
+  background-color: #313131;
+  padding: 60px 50px;
+  height: auto;
+}
+.subscribe .subscribe-box {
+  text-align: center;
+  color: #ffffff;
+}
+.subscribe .subscribe-box .title {
+  font-size: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .subscribe .subscribe-box .title {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .subscribe .subscribe-box .title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .subscribe .subscribe-box .title {
+    font-size: 30px;
+  }
+}
+.subscribe .subscribe-box .subtitle {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.subscribe form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.subscribe form .email-input {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  border: none;
+  padding: 20px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+.subscribe form .submit-button {
+  display: block;
+  width: 150px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.subscribe form .submit-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  padding: 60px 50px;
+  justify-content: flex-end;
+  height: auto;
+  background-color: #252525;
+}
+@media only screen and (max-width: 375px) {
+  .footer {
+    justify-content: center;
+  }
+}
+.footer .link-box .link {
+  color: #ffffff;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+@media only screen and (max-width: 414px) {
+  .footer .link-box .link {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .footer .link-box .link {
+    padding-left: 12px;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

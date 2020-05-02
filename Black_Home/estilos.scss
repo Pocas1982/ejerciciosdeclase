@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600;800&display=swap');
+
+$fontPrimary: 'EB Garamond',
+serif;
+$fontSecondary:'Baloo Bhaina 2',
+cursive;
+$padding-section: 60px 50px;
+$padding-section-mobile: 60px 30px;
+$title:#ffffff;
+$title-size:60px;
+$title-size-ipad:50px;
+$title-size-mobile:40px;
+$title-size-mobile2:30px;
+$article-box:#252525;
+$subscribe:#313131;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.line {
+    border-bottom: 1px solid #ffffff;
+    width: 60px;
+}
+
+.hero-box {
+    background-image: url(https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #999;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 700px;
+    padding: 0 60px 50px;
+    @media only screen and (max-width: 375px){
+        padding: 0 40px 50px;
+    }
+
+    .image-bg {
+        display: flex;
+        padding: 30px 0;
+        justify-content: flex-end;
+        .logo{
+            display: flex;
+           
+            font-size: 95px;
+            left: 25px;
+            position: absolute;
+            top: 0px;
+        }
+
+        .nav-bar {
+            display: flex;
+            .link {
+                padding: 10px;
+                color: #ffffff;
+                font-size: 20px;
+                font-family: $fontSecondary;
+            }
+            @media only screen and (max-width: 414px){
+                display: none;
+            }
+
+            .link-btn {
+                border: 1px solid #ffffff;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .text-box {
+        margin: 70px 0;
+        @media only screen and (max-width: 414px){
+            margin: 120px 0 70px 0;
+        }
+
+        .title {
+            font-size: $title-size;
+            color: $title;
+            font-weight: bold;
+        }
+
+        p.subtitle {
+            font-size: 25px;
+            font-family: $fontSecondary;
+            @media only screen and (max-width: 375px){
+                font-size: 17px;
+            }
+        }
+    }
+
+    .subtext-box {
+        text-align: center;
+        color: $title;
+        max-width: 500px;
+        margin: 0 auto;
+
+        .title {
+            font-size: $title-size;
+            @media only screen and (max-width: 768px){
+                font-size: $title-size-ipad;
+            }
+            @media only screen and (max-width: 414px){
+                font-size: $title-size-mobile;
+            }
+            @media only screen and (max-width: 375px){
+                font-size: $title-size-mobile2;
+            }
+        }
+
+        .subtitle {
+            font-family: $fontSecondary;
+        }
+
+        .text {
+            font-family: "Baloo Bhaina 2", cursive;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+
+        .line {
+            margin: 0 auto;
+
+        }
+    }
+}
+
+.article-box {
+
+    padding: $padding-section;
+    background-color: $article-box;
+    @media only screen and (max-width: 375px){
+        padding: $padding-section-mobile;
+    }
+    
+
+    .info-box {
+        text-align: center;
+        color: $title;
+
+        .title {
+            font-size: $title-size;
+            @media only screen and (max-width: 768px){
+                font-size: $title-size-ipad;
+            }
+            @media only screen and (max-width: 414px){
+                font-size: $title-size-mobile;
+            }
+            @media only screen and (max-width: 375px){
+                font-size: $title-size-mobile2;
+            }
+        }
+
+        .subtitle {
+            font-family: $fontSecondary;
+        }
+
+        .line {
+            margin: 0 auto;
+
+        }
+    }
+
+    .article-content {
+        display: flex;
+        margin: 0 -20px;
+
+        .article {
+            height: 600px;
+            width: calc(33% - 20px);
+            background-color: aqua;
+            margin: 45px 20px;
+            box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+            position: relative;
+            background-size: cover;
+            @media only screen and (max-width: 768px){
+                height: 500px;
+               
+            }
+            @media only screen and (max-width: 414px){
+                height: 350px;
+                width: calc(33% - 0px);
+                margin: 45px 5px;
+            }
+
+            &:nth-child(1) {
+                background-image: url(https://images.unsplash.com/photo-1530542600451-eaa8984ba8d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80);
+            }
+
+            &:nth-child(2) {
+                background-image: url(https://images.unsplash.com/photo-1580743069148-65e1e12c171d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+
+            }
+
+            &:nth-child(3) {
+                background-image: url(https://images.unsplash.com/photo-1582696943041-a519d0d4c464?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+
+            }
+        }
+
+        .title.bottom {
+            position: absolute;
+            bottom: 30px;
+            text-align: center;
+            left: 25%;
+            right: 25%;
+            color: $title;
+
+            .line {
+                margin: 10px auto;
+            }
+        }
+    }
+}
+
+.subscribe {
+    background-color: $subscribe;
+    padding: $padding-section;
+    height: auto;
+
+    .subscribe-box {
+        text-align: center;
+        color: $title;
+
+        .title {
+            font-size: $title-size;
+            @media only screen and (max-width: 768px){
+                font-size: $title-size-ipad;
+            }
+            @media only screen and (max-width: 414px){
+                font-size: $title-size-mobile;
+            }
+            @media only screen and (max-width: 375px){
+                font-size: $title-size-mobile2;
+            }
+        }
+
+        .subtitle {
+            font-family: $fontSecondary;
+        }
+    }
+
+    //    .email-input, .submit-button{
+    //        display: flex;
+    //        margin: 0 auto;
+    //    }
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+
+        .email-input {
+            display: block;
+            width: 100%;
+            background-color: #333;
+            border: none;
+            padding: 20px;
+            margin: 20px 0;
+            color: $title;
+        }
+        .submit-button{
+            display: block;
+            width: 150px;
+            padding: 15px;
+            margin: 0 auto;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            &:hover{
+                background-color: #ffffff;
+                color: #000000;
+               
+             
+            }
+        }
+    }
+
+}
+.footer{
+    display: flex;
+    padding: $padding-section;
+    justify-content: flex-end;
+    height: auto;
+    background-color: $article-box;
+    @media only screen and (max-width: 375px){
+       justify-content: center;
+    }
+    .link-box{
+        .link{
+            color: #ffffff;
+            padding-left: 30px;
+            font-size: 20px;
+            font-family: $fontSecondary;
+            @media only screen and (max-width: 414px){
+                padding-left: 15px;
+                font-size: 15px;
+            }
+            @media only screen and (max-width: 375px){
+                padding-left: 12px;
+                font-size: 12px;
+            }
+            
+
+        }
+    }
+}
